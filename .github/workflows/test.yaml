@@ -17,5 +17,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
           HOSTNAME: ${{ secrets.SSH_HOST }}
         run: |
-          cho "hello from server" > hello.txt
+          echo "hello from server $SSH_HOST" > hello.txt
           cat hello.txt
