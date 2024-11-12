@@ -17,7 +17,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
           HOSTNAME: ${{ secrets.SSH_HOST }}
         run: |
-          mkdir ~/test
-          cd test
           cho "hello from server" > hello.txt
           cat hello.txt
